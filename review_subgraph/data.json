@@ -1,0 +1,20 @@
+{
+    "reviews": [{
+        "body": "Love it!",
+        "product": "1",
+        "author": "hasham"
+    }, {
+        "body": "Too expensive.",
+        "product": "2",
+        "author": "bob"
+    }, {
+        "body": "Could be better.",
+        "product": "1",
+        "author": "hasham"
+    }, {
+        "body": "Prefer something else.",
+        "product": "2",
+        "author": "bob"
+    }
+  ]
+}

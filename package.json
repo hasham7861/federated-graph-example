@@ -1,0 +1,16 @@
+{
+  "name": "federated-graph-test",
+  "version": "1.0.0",
+  "description": "federated graph test",
+  "main": "start.js",
+  "scripts": {
+    "dev": "npm run start.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}

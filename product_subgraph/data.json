@@ -1,0 +1,21 @@
+{
+    "products": [
+            {
+                "upc": "1",
+                "name": "Table",
+                "price": 899
+            }, {
+                "upc": "2",
+                "name": "Couch",
+                "price": 1299
+            }, {
+                "upc": "3",
+                "name": "Chair",
+                "price": 54
+            }, {
+                "upc": "4",
+                "name": "Potted Plant",
+                "price": 29
+            }
+    ]
+}
