@@ -2,6 +2,8 @@ const { ApolloServer, gql } = require('apollo-server');
 const { buildFederatedSchema } = require('@apollo/federation');
 const products = require("./data.json").products;
 
+const PORT = process.env.PORT || 4001;
+
 const typeDefs = gql`
 
   # using the key directive makes the Product an entity and you can make use of it and pass upc field to it 
@@ -33,6 +35,7 @@ const server = new ApolloServer({
   schema: buildFederatedSchema([{ typeDefs, resolvers }]),
 });
 
-server.listen({ port: 4001 }).then(({ url }) => {
+
+server.listen({ port: PORT }).then(({ url }) => {
   console.log(`🚀 Server ready at ${url}`);
 });

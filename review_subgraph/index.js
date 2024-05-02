@@ -3,6 +3,8 @@ const { buildFederatedSchema } = require('@apollo/federation');
 
 const reviews = require("./data.json").reviews;
 
+const PORT = process.env.PORT || 4002;
+
 const typeDefs = gql`
   type Review {
     body: String
@@ -43,6 +45,6 @@ const server = new ApolloServer({
   schema: buildFederatedSchema([{ typeDefs, resolvers }]),
 });
 
-server.listen({ port: 4002 }).then(({ url }) => {
+server.listen({ port: PORT }).then(({ url }) => {
   console.log(`🚀 Server ready at ${url}`);
 });
