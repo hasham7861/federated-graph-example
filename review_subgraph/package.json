@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/federation": "^0.38.1",
+    "@graphql-tools/utils": "^10.2.0",
     "apollo-server": "^3.13.0",
     "graphql": "^16.8.1"
   }
