@@ -1,7 +1,5 @@
 const { ApolloServer, gql } = require('apollo-server');
 const { buildFederatedSchema } = require('@apollo/federation');
-const { printSchemaWithDirectives } = require('@graphql-tools/utils');
-const fs = require('fs');
 
 const products = require("./data.json").products;
 
@@ -36,11 +34,6 @@ const resolvers = {
 };
 
 const schema = buildFederatedSchema([{ typeDefs, resolvers }]);
-
-const schemaString = printSchemaWithDirectives(schema);
-
-// Write the schema to a file
-fs.writeFileSync('schema.graphql', schemaString);
 
 const server = new ApolloServer({
   schema,

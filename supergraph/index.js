@@ -5,11 +5,8 @@ dotenv.config();
 
 const PORT = process.env.PORT || 4000;
 
-const PRODUCT_SUBGRAPH = process.env.PRODUCT_SUBGRAPH;
-const REVIEW_SUBGRAPH = process.env.REVIEW_SUBGRAPH;
-
-console.log('PRODUCT_SUBGRAPH:', PRODUCT_SUBGRAPH); 
-console.log('REVIEW_SUBGRAPH:', REVIEW_SUBGRAPH);
+const PRODUCT_SUBGRAPH = process.env.PRODUCT_SUBGRAPH || "http://localhost:4001";
+const REVIEW_SUBGRAPH = process.env.REVIEW_SUBGRAPH || "http://localhost:4002";
 
 const gateway = new ApolloGateway({
   serviceList: [
