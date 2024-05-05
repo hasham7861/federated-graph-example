@@ -4,7 +4,7 @@
   "description": "federated graph test",
   "main": "start.js",
   "scripts": {
-    "start": "npm run start.js"
+    "start": "node run start.js"
   },
   "keywords": [],
   "author": "",
